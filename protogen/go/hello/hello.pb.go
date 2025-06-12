@@ -117,9 +117,10 @@ const file_proto_hello_hello_proto_rawDesc = "" +
 	"\fHelloRequest\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\"%\n" +
 	"\rHelloResponse\x12\x14\n" +
-	"\x05greet\x18\x01 \x01(\tR\x05greet2G\n" +
+	"\x05greet\x18\x01 \x01(\tR\x05greet2\x87\x01\n" +
 	"\fHelloService\x127\n" +
-	"\bSayHello\x12\x13.hello.HelloRequest\x1a\x14.hello.HelloResponse\"\x00B7Z5github.com/vangiachu/gia-grpc-proto/protogen/go/hellob\x06proto3"
+	"\bSayHello\x12\x13.hello.HelloRequest\x1a\x14.hello.HelloResponse\"\x00\x12>\n" +
+	"\rSayManyHellos\x12\x13.hello.HelloRequest\x1a\x14.hello.HelloResponse\"\x000\x01B7Z5github.com/vangiachu/gia-grpc-proto/protogen/go/hellob\x06proto3"
 
 var (
 	file_proto_hello_hello_proto_rawDescOnce sync.Once
@@ -140,9 +141,11 @@ var file_proto_hello_hello_proto_goTypes = []any{
 }
 var file_proto_hello_hello_proto_depIdxs = []int32{
 	0, // 0: hello.HelloService.SayHello:input_type -> hello.HelloRequest
-	1, // 1: hello.HelloService.SayHello:output_type -> hello.HelloResponse
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	0, // 1: hello.HelloService.SayManyHellos:input_type -> hello.HelloRequest
+	1, // 2: hello.HelloService.SayHello:output_type -> hello.HelloResponse
+	1, // 3: hello.HelloService.SayManyHellos:output_type -> hello.HelloResponse
+	2, // [2:4] is the sub-list for method output_type
+	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
